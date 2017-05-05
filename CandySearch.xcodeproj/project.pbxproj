@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		86DC3DAE1EBB3C780082E03C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC3DAD1EBB3C780082E03C /* AppDelegate.swift */; };
-		86DC3DB01EBB3C780082E03C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC3DAF1EBB3C780082E03C /* ViewController.swift */; };
 		86DC3DB31EBB3C780082E03C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DC3DB11EBB3C780082E03C /* Main.storyboard */; };
 		86DC3DB51EBB3C780082E03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86DC3DB41EBB3C780082E03C /* Assets.xcassets */; };
 		86DC3DB81EBB3C780082E03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DC3DB61EBB3C780082E03C /* LaunchScreen.storyboard */; };
 		86DC3DC31EBB3C780082E03C /* CandySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC3DC21EBB3C780082E03C /* CandySearchTests.swift */; };
 		86DC3DCE1EBB3C790082E03C /* CandySearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC3DCD1EBB3C790082E03C /* CandySearchUITests.swift */; };
+		86DC3DDC1EBC0BC40082E03C /* candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC3DDB1EBC0BC40082E03C /* candy.swift */; };
+		86DC3DDE1EBC0C160082E03C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC3DDD1EBC0C160082E03C /* DetailViewController.swift */; };
+		86DC3DE01EBC0D1F0082E03C /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC3DDF1EBC0D1F0082E03C /* MasterTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		86DC3DAA1EBB3C780082E03C /* CandySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DC3DAD1EBB3C780082E03C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86DC3DAF1EBB3C780082E03C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		86DC3DB21EBB3C780082E03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86DC3DB41EBB3C780082E03C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86DC3DB71EBB3C780082E03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		86DC3DC91EBB3C780082E03C /* CandySearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CandySearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DC3DCD1EBB3C790082E03C /* CandySearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandySearchUITests.swift; sourceTree = "<group>"; };
 		86DC3DCF1EBB3C790082E03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86DC3DDB1EBC0BC40082E03C /* candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = candy.swift; sourceTree = "<group>"; };
+		86DC3DDD1EBC0C160082E03C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		86DC3DDF1EBC0D1F0082E03C /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				86DC3DAD1EBB3C780082E03C /* AppDelegate.swift */,
-				86DC3DAF1EBB3C780082E03C /* ViewController.swift */,
 				86DC3DB11EBB3C780082E03C /* Main.storyboard */,
 				86DC3DB41EBB3C780082E03C /* Assets.xcassets */,
 				86DC3DB61EBB3C780082E03C /* LaunchScreen.storyboard */,
 				86DC3DB91EBB3C780082E03C /* Info.plist */,
+				86DC3DDB1EBC0BC40082E03C /* candy.swift */,
+				86DC3DDD1EBC0C160082E03C /* DetailViewController.swift */,
+				86DC3DDF1EBC0D1F0082E03C /* MasterTableViewController.swift */,
 			);
 			path = CandySearch;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86DC3DB01EBB3C780082E03C /* ViewController.swift in Sources */,
+				86DC3DDE1EBC0C160082E03C /* DetailViewController.swift in Sources */,
+				86DC3DE01EBC0D1F0082E03C /* MasterTableViewController.swift in Sources */,
 				86DC3DAE1EBB3C780082E03C /* AppDelegate.swift in Sources */,
+				86DC3DDC1EBC0BC40082E03C /* candy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
